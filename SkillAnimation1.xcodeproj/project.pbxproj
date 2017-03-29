@@ -16,6 +16,8 @@
 		71E9E4331E8AAAE400717D69 /* SkillAnimation1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E9E4321E8AAAE400717D69 /* SkillAnimation1Tests.swift */; };
 		71E9E4431E8AB12C00717D69 /* AnimationOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E9E4411E8AB12C00717D69 /* AnimationOne.swift */; };
 		71E9E4441E8AB12C00717D69 /* AnimationOne.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71E9E4421E8AB12C00717D69 /* AnimationOne.xib */; };
+		71E9E4491E8B846600717D69 /* AnimationTwo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71E9E4481E8B846600717D69 /* AnimationTwo.storyboard */; };
+		71E9E44B1E8B850500717D69 /* AnimationTwoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E9E44A1E8B850500717D69 /* AnimationTwoVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		71E9E4341E8AAAE400717D69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71E9E4411E8AB12C00717D69 /* AnimationOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationOne.swift; sourceTree = "<group>"; };
 		71E9E4421E8AB12C00717D69 /* AnimationOne.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimationOne.xib; sourceTree = "<group>"; };
+		71E9E4481E8B846600717D69 /* AnimationTwo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AnimationTwo.storyboard; sourceTree = "<group>"; };
+		71E9E44A1E8B850500717D69 /* AnimationTwoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationTwoVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +109,9 @@
 		71E9E43D1E8AAD4B00717D69 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				71E9E4461E8AF47000717D69 /* Animation2 */,
 				71E9E4401E8AAF7E00717D69 /*  Animation1 */,
 			);
-			name = Modules;
 			path = Modules;
 			sourceTree = "<group>";
 		};
@@ -117,7 +121,6 @@
 				71E9E43F1E8AADCF00717D69 /* View */,
 				71E9E41A1E8AAAE400717D69 /* AppDelegate.swift */,
 			);
-			name = Common;
 			path = Common;
 			sourceTree = "<group>";
 		};
@@ -127,7 +130,6 @@
 				71E9E41E1E8AAAE400717D69 /* Main.storyboard */,
 				71E9E41C1E8AAAE400717D69 /* MainVC.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -136,7 +138,6 @@
 			children = (
 				71E9E4451E8AB13300717D69 /* View */,
 			);
-			name = " Animation1";
 			path = " Animation1";
 			sourceTree = "<group>";
 		};
@@ -146,8 +147,24 @@
 				71E9E4411E8AB12C00717D69 /* AnimationOne.swift */,
 				71E9E4421E8AB12C00717D69 /* AnimationOne.xib */,
 			);
-			name = View;
 			path = View;
+			sourceTree = "<group>";
+		};
+		71E9E4461E8AF47000717D69 /* Animation2 */ = {
+			isa = PBXGroup;
+			children = (
+				71E9E4471E8B833900717D69 /* View */,
+			);
+			name = Animation2;
+			sourceTree = "<group>";
+		};
+		71E9E4471E8B833900717D69 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				71E9E4481E8B846600717D69 /* AnimationTwo.storyboard */,
+				71E9E44A1E8B850500717D69 /* AnimationTwoVC.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +255,7 @@
 				71E9E4281E8AAAE400717D69 /* LaunchScreen.storyboard in Resources */,
 				71E9E4251E8AAAE400717D69 /* Assets.xcassets in Resources */,
 				71E9E4201E8AAAE400717D69 /* Main.storyboard in Resources */,
+				71E9E4491E8B846600717D69 /* AnimationTwo.storyboard in Resources */,
 				71E9E4441E8AB12C00717D69 /* AnimationOne.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +276,7 @@
 			files = (
 				71E9E4231E8AAAE400717D69 /* SkillAnimation1.xcdatamodeld in Sources */,
 				71E9E41D1E8AAAE400717D69 /* MainVC.swift in Sources */,
+				71E9E44B1E8B850500717D69 /* AnimationTwoVC.swift in Sources */,
 				71E9E41B1E8AAAE400717D69 /* AppDelegate.swift in Sources */,
 				71E9E4431E8AB12C00717D69 /* AnimationOne.swift in Sources */,
 			);

@@ -22,6 +22,11 @@ class MainVC: UIViewController {
         let vcAnimationOne = AnimationOne(nibName: "AnimationOne", bundle: nil)
         self.present(vcAnimationOne, animated: true, completion: nil)
     }
-
+    @IBAction func animationTwo(_ sender: Any) {
+        
+        let animationTwoBoard = UIStoryboard(name: "AnimationTwo", bundle: nil)
+        let animationTwoVC = animationTwoBoard.instantiateViewController(withIdentifier: "AnimationTwoVC")
+        self.present(animationTwoVC, animated: true, completion: nil)
+    }
 }
 
