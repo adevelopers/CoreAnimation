@@ -49,17 +49,10 @@
                                     <action selector="startAnimation:" destination="t48-xY-tGg" eventType="touchUpInside" id="oyj-XP-Lze"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JzU-5x-Au6">
-                                <rect key="frame" x="104" y="186" width="128" height="116"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="planet" translatesAutoresizingMaskIntoConstraints="NO" id="c15-Vm-a7A">
+                                <rect key="frame" x="110" y="159" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo-1" translatesAutoresizingMaskIntoConstraints="NO" id="c15-Vm-a7A">
-                                        <rect key="frame" x="14" y="8" width="100" height="100"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -73,7 +66,6 @@
                     </view>
                     <connections>
                         <outlet property="uiBall" destination="c15-Vm-a7A" id="dIt-M3-vBf"/>
-                        <outlet property="uiViewBall" destination="JzU-5x-Au6" id="cKI-qG-KEA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Mf-pc-XIt" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -82,6 +74,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logo-1" width="640" height="640"/>
+        <image name="planet" width="57" height="60"/>
     </resources>
 </document>

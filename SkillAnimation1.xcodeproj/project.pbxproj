@@ -36,7 +36,7 @@
 		71E9E41C1E8AAAE400717D69 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		71E9E41F1E8AAAE400717D69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		71E9E4221E8AAAE400717D69 /* SkillAnimation1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SkillAnimation1.xcdatamodel; sourceTree = "<group>"; };
-		71E9E4241E8AAAE400717D69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		71E9E4241E8AAAE400717D69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../SkillAnimation1/Assets.xcassets; sourceTree = "<group>"; };
 		71E9E4271E8AAAE400717D69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71E9E4291E8AAAE400717D69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71E9E42E1E8AAAE400717D69 /* SkillAnimation1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkillAnimation1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,9 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				71E9E43D1E8AAD4B00717D69 /* Modules */,
-				71E9E4241E8AAAE400717D69 /* Assets.xcassets */,
 				71E9E4291E8AAAE400717D69 /* Info.plist */,
-				71E9E4261E8AAAE400717D69 /* LaunchScreen.storyboard */,
 				71E9E4211E8AAAE400717D69 /* SkillAnimation1.xcdatamodeld */,
 			);
 			path = SkillAnimation1;
@@ -118,6 +116,7 @@
 		71E9E43E1E8AADA400717D69 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				71E9E4241E8AAAE400717D69 /* Assets.xcassets */,
 				71E9E43F1E8AADCF00717D69 /* View */,
 				71E9E41A1E8AAAE400717D69 /* AppDelegate.swift */,
 			);
@@ -127,6 +126,7 @@
 		71E9E43F1E8AADCF00717D69 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				71E9E4261E8AAAE400717D69 /* LaunchScreen.storyboard */,
 				71E9E41E1E8AAAE400717D69 /* Main.storyboard */,
 				71E9E41C1E8AAAE400717D69 /* MainVC.swift */,
 			);
@@ -316,7 +316,7 @@
 				71E9E4271E8AAAE400717D69 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			path = .;
+			path = ../../SkillAnimation1/.;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
