@@ -8,6 +8,12 @@
 
 import UIKit
 
+enum AnimationType:Int{
+    case One
+    case Two
+    case Path = 3
+}
+
 class AnimationTwoVC: UIViewController {
 
     @IBOutlet weak var uiBall: UIImageView!
@@ -16,6 +22,7 @@ class AnimationTwoVC: UIViewController {
     var point:CGPoint = CGPoint(x: 0, y: 0)
     static var number:Int = 0
     let animaDuration = 2.0
+    let animType:AnimationType = .Path
     
     @IBOutlet weak var uiViewBall: UIView!
     
@@ -109,31 +116,20 @@ class AnimationTwoVC: UIViewController {
     
     
     //MARK: Animation Path
-    func getPath() -> CGPath {
-        let path = UIBezierPath()
-        path.move(to: point)
-        
-        path.addCurve(to: CGPoint(x: point.x, y: point.y),
-                      controlPoint1: CGPoint(x: -436, y: 373),
-                      controlPoint2: CGPoint(x: 501, y: 410)
-        )
-
-        return path.cgPath
-    }
-    
     func animationPath(){
-        
         // create a new CAKeyframeAnimation that animates the objects position
         let anim = CAKeyframeAnimation(keyPath: "position")
         
         // set the animations path to our bezier curve
-        anim.path = getPath()
+        var orbita = AnimationPath1()
+        orbita.targetPoint = self.uiBall.center
+        anim.path = orbita.getPath()
         
         // set some more parameters for the animation
         // this rotation mode means that our object will rotate so that it's parallel to whatever point it is currently on the curve
         anim.rotationMode = kCAAnimationRotateAuto
         anim.repeatCount = Float.infinity
-        anim.duration = 6.0
+        anim.duration = 3.0
         
         // we add the animation to the squares 'layer' property
         uiBall.layer.add(anim, forKey: "animate position along path")

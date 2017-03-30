@@ -18,6 +18,7 @@
 		71E9E4441E8AB12C00717D69 /* AnimationOne.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71E9E4421E8AB12C00717D69 /* AnimationOne.xib */; };
 		71E9E4491E8B846600717D69 /* AnimationTwo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71E9E4481E8B846600717D69 /* AnimationTwo.storyboard */; };
 		71E9E44B1E8B850500717D69 /* AnimationTwoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E9E44A1E8B850500717D69 /* AnimationTwoVC.swift */; };
+		71E9E44E1E8D16EB00717D69 /* AnimationPathProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E9E44D1E8D16EB00717D69 /* AnimationPathProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		71E9E4421E8AB12C00717D69 /* AnimationOne.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimationOne.xib; sourceTree = "<group>"; };
 		71E9E4481E8B846600717D69 /* AnimationTwo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AnimationTwo.storyboard; sourceTree = "<group>"; };
 		71E9E44A1E8B850500717D69 /* AnimationTwoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationTwoVC.swift; sourceTree = "<group>"; };
+		71E9E44D1E8D16EB00717D69 /* AnimationPathProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationPathProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 		71E9E4461E8AF47000717D69 /* Animation2 */ = {
 			isa = PBXGroup;
 			children = (
+				71E9E44C1E8D16C500717D69 /* Model */,
 				71E9E4471E8B833900717D69 /* View */,
 			);
 			name = Animation2;
@@ -165,6 +168,14 @@
 				71E9E44A1E8B850500717D69 /* AnimationTwoVC.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		71E9E44C1E8D16C500717D69 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				71E9E44D1E8D16EB00717D69 /* AnimationPathProtocol.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +290,7 @@
 				71E9E44B1E8B850500717D69 /* AnimationTwoVC.swift in Sources */,
 				71E9E41B1E8AAAE400717D69 /* AppDelegate.swift in Sources */,
 				71E9E4431E8AB12C00717D69 /* AnimationOne.swift in Sources */,
+				71E9E44E1E8D16EB00717D69 /* AnimationPathProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
